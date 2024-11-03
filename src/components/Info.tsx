@@ -8,9 +8,9 @@ const Info = () => {
     ];
 
     return (
-        <Container maxWidth="lg" sx={{height:"50vh",maxHeight:"1080px", display:"flex", flexDirection:"column", justifyContent:"center", mt: 4, mb: 4 }}>
+        <Container maxWidth="lg" sx={{height:"100vh",maxHeight:"1080px", display:"flex", flexDirection:"column", justifyContent:"center", mt: 4, mb: 4, gap:"50px" }}>
             <Box sx={{ textAlign: 'center', mb: 4 }}>
-                <Typography variant="h3" gutterBottom>
+                <Typography variant="h3" gutterBottom sx={{paddingBottom:"24px"}}>
                     About me
                 </Typography>
                 <Typography variant="h6" color="textSecondary">
@@ -19,7 +19,7 @@ const Info = () => {
             </Box>
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: 4 }}>
                 <Box sx={{ flex: 1, fontSize: '1.5rem' }}>
-                    <Typography variant="body1">
+                    <Typography variant="body1" sx={{fontSize:"18px", lineHeight:"40px"}}>
                         Full-stack JavaScript developer with comprehensive training and a strong foundation in both front-end and back-end technologies, with a background in computer science. Hands-on experience with various JavaScript frameworks and libraries, enabling the creation of dynamic and responsive web applications.
                     </Typography>
                 </Box>
@@ -29,7 +29,7 @@ const Info = () => {
                             key={skill}
                             label={skill} 
                             variant="outlined" 
-                            sx={{ fontSize: '1rem' }} 
+                            sx={{ fontSize: '1.3rem' }} 
                         />
                     ))}
                 </Box>
