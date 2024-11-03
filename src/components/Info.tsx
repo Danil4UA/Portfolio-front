@@ -11,13 +11,14 @@ const Info = () => {
         <Container 
             maxWidth="lg" 
             sx={{
-                height: "100vh",
+                minHeight: "100vh",
                 display: "flex", 
                 flexDirection: "column", 
                 justifyContent: "center", 
                 mt: 4, 
                 mb: 4, 
-                gap: "50px"
+                gap: "50px",
+                boxSizing:"border-box"
             }}
         >
             <Box sx={{ textAlign: 'center', mb: 4 }}>
@@ -51,7 +52,9 @@ const Info = () => {
                         display: 'flex', 
                         gap: 1, 
                         flexWrap: 'wrap', 
-                        justifyContent: { xs: 'center', md: 'flex-start' } 
+                        justifyContent: { xs: 'center', md: 'flex-start' },
+                        padding:"20px",
+                        boxSizing:"border-box"
                     }}
                 >
                     {skills.map((skill) => (

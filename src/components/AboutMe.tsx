@@ -14,7 +14,7 @@ const AboutMe = () => {
                 flexDirection: 'column', 
                 justifyContent: 'center', 
                 alignItems: 'center', 
-                gap: 4 
+                gap: 4 ,
             }}
         >
             <Typography variant="h2" sx={{ fontSize: { xs: '48px', md: '62px', textAlign:"center"} }}>

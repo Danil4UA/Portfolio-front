@@ -4,6 +4,7 @@ import logo from "../assets/styles/logoAI.png";
 const Projects = () => {
     return (
         <Container 
+            id="projects"
             maxWidth="lg" 
             sx={{ 
                 mt: 4, 
@@ -11,7 +12,7 @@ const Projects = () => {
                 bgcolor: '#ffffff', 
                 borderRadius: '8px', 
                 p: 4,
-                height: "100vh",
+                boxSizing:"border-box"
             }}
         >
             <Box sx={{ textAlign: "center"}}>
@@ -25,7 +26,7 @@ const Projects = () => {
                         flexDirection: { xs: "column", md: "row" }, 
                         justifyContent: "space-between", 
                         gap: "24px", 
-                        padding: "100px 0" 
+                        padding: "50px 0",
                     }}
                 >
                     <Box 
@@ -51,10 +52,10 @@ const Projects = () => {
                             justifyContent: 'center', 
                             gap: "24px",
                             alignItems: 'center', 
-                            bgcolor: 'white', 
                             borderRadius: '8px', 
+                            boxSizing:"border-box",
                             p: 4, 
-                            mb: 4 
+                            mb: 4, 
                         }}
                     >
                         <Typography variant="h5" gutterBottom>
