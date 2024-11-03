@@ -12,10 +12,9 @@ const Projects = () => {
                 borderRadius: '8px', 
                 p: 4,
                 height: "100vh",
-                maxHeight: "1080px",
             }}
         >
-            <Box sx={{ textAlign: "center" }}>
+            <Box sx={{ textAlign: "center"}}>
                 <Typography variant="h4" component="h2" gutterBottom>
                     Projects
                 </Typography>
